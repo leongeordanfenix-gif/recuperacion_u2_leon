@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\AutorController;
+use App\Http\Controllers\Api\LibroController;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+Route::apiResource('autores', AutorController::class);
+Route::apiResource('libros', LibroController::class);
+Route::get('autores/{id}/libros', [AutorController::class, 'libros']);

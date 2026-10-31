@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "d1916de6-a0b0-47cd-9bc2-e0aba72349a2",
+    "name": "coleccion_recuperacion.json",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58733044",
+    "_collection_link": "https://go.postman.co/collection/58733044-d1916de6-a0b0-47cd-9bc2-e0aba72349a2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://127.0.0.1:8000/api/autores/1/libros",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/autores/1/libros",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "autores",
+            "1",
+            "libros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/libros",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"autor_id\": 2,\r\n  \"titulo\": \"El chapulin Colorado\",\r\n  \"isbn\": \"956-9864527419\",\r\n  \"anio_publicacion\": 1970,\r\n  \"precio\": 39.99,\r\n  \"paginas\": 250,\r\n  \"editorial\": \"Local News\",\r\n  \"idioma\": \"Español\",\r\n  \"stock\": 9\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/autores/1/libros",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "autores",
+            "1",
+            "libros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/libros",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/libros",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "libros"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
